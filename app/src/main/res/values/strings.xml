@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">cakeque</string>
+    <string name="welcome_note">Welcome to cakeque!</string>
+    <string name="btn1h">create your profile</string>
+    <string name="btn2h">create your order</string>
+    <string name="btn3h">create your proposal</string>
+    <string name="btn4h">Give us your feedback</string>
+    <string name="btn1h1">butnh1</string>
+    <string name="btn2h1">butnh2</string>
+    <string name="btn3h1">butnh3</string>
+    <string name="btn4h1">butnh4</string>
+</resources>
