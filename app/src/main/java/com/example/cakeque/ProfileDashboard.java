@@ -10,6 +10,7 @@ import android.view.View;
 public class ProfileDashboard extends AppCompatActivity {
 
     public Button button;
+    public Button button1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,16 @@ public class ProfileDashboard extends AppCompatActivity {
                 Intent intent= new Intent(ProfileDashboard.this,MainActivity.class);
                 startActivity(intent);
             }
+
+        });
+        button1 = (Button) findViewById(R.id.btncen);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(ProfileDashboard.this,CreateProfile.class);
+                startActivity(intent1);
+            }
         });
     }
+
 }

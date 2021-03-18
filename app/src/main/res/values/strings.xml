@@ -14,4 +14,5 @@
     <string name="btnModify">Modify Profile</string>
     <string name="btnCreate">Create Profile</string>
     <string name="btnView">View Profile</string>
+    <string name="txtCreatePage">Create Profile</string>
 </resources>
