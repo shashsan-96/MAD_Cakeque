@@ -15,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/btnModify"
         app:backgroundTint="@color/dogeblu"
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtName" />
@@ -26,6 +27,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/btnCreate"
         app:backgroundTint="@color/dogeblu"
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnpro" />
@@ -37,22 +39,9 @@
         android:layout_marginTop="284dp"
         android:text="@string/btnView"
         app:backgroundTint="@color/dogeblu"
+        app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edtName"
-        android:layout_width="291dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="432dp"
-        android:ems="10"
-        android:hint="@string/entUID"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,6 +83,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.043" />
+
+    <TextView
+        android:id="@+id/modiView"
+        android:layout_width="324dp"
+        android:layout_height="151dp"
+        android:background="@drawable/footshape"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.71" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="291dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="432dp"
+        android:ems="10"
+        android:hint="@string/entUID"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
