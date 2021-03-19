@@ -11,6 +11,7 @@ public class ProfileDashboard extends AppCompatActivity {
 
     public Button button;
     public Button button1;
+    public Button button2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,14 @@ public class ProfileDashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1 = new Intent(ProfileDashboard.this,CreateProfile.class);
                 startActivity(intent1);
+            }
+        });
+        button2 = (Button) findViewById(R.id.btnpro);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(ProfileDashboard.this,ViewPage.class);
+                startActivity(intent2);
             }
         });
     }

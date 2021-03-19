@@ -30,4 +30,11 @@
     <string name="txtUpload">Upload Images</string>
     <string name="btnUpload">Upload</string>
     <string name="btnProCreate">Create</string>
+    <string name="txtdisplay">Search Profiles</string>
+    <string name="txtExplain"> Make easier to get customer attraction</string>
+    <string name="txtProId">Profile ID </string>
+    <string name="txtSearchId">Enter User ID </string>
+    <string name="btnSearch">Search</string>
+    <string name="txtPro1">Profile 1 Details</string>
+    <string name="txtPro2">Profile 2 Details</string>
 </resources>
