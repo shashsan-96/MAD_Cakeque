@@ -37,4 +37,8 @@
     <string name="btnSearch">Search</string>
     <string name="txtPro1">Profile 1 Details</string>
     <string name="txtPro2">Profile 2 Details</string>
+    <string name="txtProfileOne">Profile</string>
+    <string name="txtModify">Modificational Page</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btnDelete">Delete</string>
 </resources>

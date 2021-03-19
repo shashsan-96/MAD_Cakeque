@@ -5,57 +5,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightPink"
-    tools:context=".CreateProfile">
-
+    tools:context=".ModifyPage">
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:id="@+id/textView5"
+        android:layout_width="414dp"
+        android:layout_height="89dp"
         android:background="@drawable/headershape"
-        android:fontFamily="sans-serif-black"
-        android:textColor="@color/white"
-        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnCake2"
-        android:layout_width="101dp"
-        android:layout_height="92dp"
+        android:id="@+id/btnCake5"
+        android:layout_width="131dp"
+        android:layout_height="107dp"
         android:background="@drawable/cake_foreground"
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.006" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="-234dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/txtCreate"
-        android:layout_width="247dp"
-        android:layout_height="77dp"
+        android:id="@+id/txtModify"
+        android:layout_width="248dp"
+        android:layout_height="91dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/txtCreatePage"
+        android:text="@string/txtModify"
         android:textAlignment="center"
-        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:textSize="29dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <TextView
         android:id="@+id/txtbac1"
@@ -359,19 +350,32 @@
         app:layout_constraintVertical_bias="0.821" />
 
     <Button
-        android:id="@+id/btncreate"
-        android:layout_width="182dp"
-        android:layout_height="51dp"
+        android:id="@+id/btnUpdate"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
         android:background="@color/purple_200"
-        android:text="@string/btnProCreate"
+        android:text="@string/btnUpdate"
         app:backgroundTint="@color/purple_200"
         app:cornerRadius="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
+        app:layout_constraintVertical_bias="0.96" />
 
-
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="165dp"
+        android:layout_height="42dp"
+        android:background="@color/purple_200"
+        android:text="@string/btnDelete"
+        app:backgroundTint="@color/purple_200"
+        app:cornerRadius="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
 </androidx.constraintlayout.widget.ConstraintLayout>
