@@ -13,6 +13,6 @@
     <color name="bacgroundpink">#FFCCD1</color>
 
     <color name="gray">#7575a3</color>
-    <color name="softRed">#ffb3b3</color>
-    <color name="softOrange">#DC6565</color>
+    <color name="soft_red">#ffb3b3</color>
+    <color name="soft_orange">#DC6565</color>
 </resources>
