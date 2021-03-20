@@ -9,12 +9,11 @@
     <string name="btn2h1">butnh2</string>
     <string name="btn3h1">butnh3</string>
     <string name="btn4h1">butnh4</string>
-    
+
     <string name="btn1">Create Order</string>
     <string name="orderDashboard">Orders</string>
     <string name="allOrdersView">View All Orders</string>
     <string name="CreateOrder">Create Order</string>
-    <string name="ModifyOrder">Modify Order</string>
     <string name="enterOID">Enter oder id</string>
     <string name="orderId">Order Id</string>
     <string name="fName">First Name</string>
@@ -26,4 +25,7 @@
     <string name="enterBudget">Enter Budget</string>
     <string name="deliverDate">Enter Deliver Date</string>
     <string name="enterFName">Enter First Name</string>
+    <string name="modifyOrder">Modify Order</string>
+    <string name="Update">Update</string>
+    <string name="Delete">Delete</string>
 </resources>
