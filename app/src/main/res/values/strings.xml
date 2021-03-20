@@ -14,13 +14,13 @@
 
     <!--proposal_dash-->
     <string name="upperbar">Proposal</string>
-    <string name="prodbtn">View all proposals</string>
+    <string name="prodbtn">View proposals</string>
     <string name="prodbtn2">Create proposal</string>
     <string name="prodbtn3">Modify proposal</string>
     <string name="prodmodifylabel">Modify your proposal here</string>
     <string name="pro_modifyhint">Add proposal id</string>
-    <string name="prod_note">Win the hearts of customers by making proposals or choose the proposal of your dream!</string>
-
+    <string name="prod_note">Win the hearts of customers by making
+        proposals or choose the proposal of your dream!</string>
     <!--proposal_create-->
     <string name="textview7pcreate">Create proposal</string>
     <string name="proposalid">user id</string>
@@ -32,12 +32,10 @@
     <string name="tot_cost">Total_cost</string>
     <string name="calbtn">Calculate</string>
     <string name="sendbtn">Send</string>
-
     <!--proposl modify-->
     <string name="uploadbtn">Update</string>
     <string name="deletebtn">Delete</string>
     <string name="modifynote">Modify your proposal</string>
-
     <!--view proposal-->
     <string name="viewnote">Grab your dream cake structure here</string>
     <string name="searchbtn">Search</string>

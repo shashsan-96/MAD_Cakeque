@@ -9,15 +9,15 @@
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="56dp"
         android:background="@drawable/formrectngle"
         app:layout_constraintBottom_toTopOf="@+id/textView23"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:layout_constraintVertical_bias="0.163"
+        app:layout_constraintVertical_bias="0.65"
         app:lineHeight="20dp" />
 
     <com.google.android.material.textfield.TextInputEditText
@@ -27,10 +27,10 @@
         android:hint="email or phone number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.746" />
+        app:layout_constraintVertical_bias="0.767" />
 
     <TextView
         android:id="@+id/textView26"
@@ -44,7 +44,7 @@
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.748" />
+        app:layout_constraintVertical_bias="0.77" />
 
     <Button
         android:id="@+id/button13"
@@ -64,7 +64,7 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="408dp"
+        android:layout_width="0dp"
         android:layout_height="107dp"
         android:background="@drawable/myshape"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,10 +83,10 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintHorizontal_bias="0.585"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.039" />
 
     <Button
         android:id="@+id/cakebtn3"
@@ -104,7 +104,7 @@
     <TextView
         android:id="@+id/textView12"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="58dp"
         android:background="@drawable/formrectngle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,7 +129,7 @@
     <TextView
         android:id="@+id/textView13"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="58dp"
         android:background="@drawable/formrectngle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +154,7 @@
     <TextView
         android:id="@+id/textView11"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="58dp"
         android:background="@drawable/formrectngle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -167,7 +167,7 @@
     <TextView
         android:id="@+id/textView10"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="58dp"
         android:background="@drawable/formrectngle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -210,8 +210,8 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="412dp"
-        android:layout_height="56dp"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
         android:background="@drawable/formrectngle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -364,7 +364,7 @@
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:layout_constraintVertical_bias="0.368" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -372,10 +372,10 @@
         android:layout_height="63dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.504"
+        app:layout_constraintVertical_bias="0.549"
         app:srcCompat="@drawable/image"
         tools:ignore="VectorDrawableCompat" />
 
@@ -387,9 +387,9 @@
         app:backgroundTint="@color/dogeblu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button13"
-        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintVertical_bias="0.378" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
