@@ -10,16 +10,34 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     public Button button;
+    public Button buttonn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         button =(Button) findViewById(R.id.h_propobtn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(MainActivity.this,proposal_dashboard.class);
+
+
+        button = (Button) findViewById(R.id.button2);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(MainActivity.this,OrderDashboard.class);
+
+        buttonn = (Button) findViewById(R.id.button);
+
+        buttonn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(MainActivity.this,ProfileDashboard.class);
                 startActivity(intent);
             }
         });
