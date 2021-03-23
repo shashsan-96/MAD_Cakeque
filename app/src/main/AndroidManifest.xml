@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cakeque">
+
         <activity android:name=".Reset"></activity>
         <activity android:name=".SignUp" />
         <activity android:name=".LogIn" />
@@ -17,6 +18,7 @@
         <activity android:name=".ViewPage" />
         <activity android:name=".CreateProfile" />
         <activity android:name=".ProfileDashboard" />
+        <activity android:name=".proposal_dashboard"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
