@@ -7,21 +7,19 @@ import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
-
-    public Button buttonn;
+public class OneProfile extends AppCompatActivity {
+    public Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_one_profile);
 
-        buttonn = (Button) findViewById(R.id.button);
-
-        buttonn.setOnClickListener(new View.OnClickListener() {
+        button = (Button) findViewById(R.id.btnCake4);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity.this,ProfileDashboard.class);
+                Intent intent = new Intent(OneProfile.this,MainActivity.class);
                 startActivity(intent);
             }
         });
