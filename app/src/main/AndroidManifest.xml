@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cakeque">
 
+        <activity android:name=".view_profile"></activity>
+        <activity android:name=".proposal_modify" />
+        <activity android:name=".create_proposal" />
+        <activity android:name=".proposal_dashboard" />
         <activity android:name=".OrderList"></activity>
         <activity android:name=".ModifyOrder" />
         <activity android:name=".CreateOrder" />

@@ -18,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        button =(Button) findViewById(R.id.h_propobtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(MainActivity.this,proposal_dashboard.class);
+
+
         button = (Button) findViewById(R.id.button2);
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(MainActivity.this,ProfileDashboard.class);
-
                 startActivity(intent);
             }
         });
