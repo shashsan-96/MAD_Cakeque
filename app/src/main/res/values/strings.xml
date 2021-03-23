@@ -10,7 +10,29 @@
     <string name="btn2h1">butnh2</string>
     <string name="btn3h1">butnh3</string>
     <string name="btn4h1">butnh4</string>
-
+    <string name="btn1">Create Order</string>
+    <string name="orderDashboard">Orders</string>
+    <string name="allOrdersView">View All Orders</string>
+    <string name="CreateOrder">Create Order</string>
+    <string name="enterOID">Enter oder id</string>
+    <string name="orderId">Order Id</string>
+    <string name="fName">First Name</string>
+    <string name="Requirements">Requirements</string>
+    <string name="Budget">Budget</string>
+    <string name="Date">Date</string>
+    <string name="Submit">Submit</string>
+    <string name="enterRequirements">Enter Requirements</string>
+    <string name="enterBudget">Enter Budget</string>
+    <string name="deliverDate">Enter Deliver Date</string>
+    <string name="enterFName">Enter First Name</string>
+    <string name="modifyOrder">Modify Order</string>
+    <string name="Update">Update</string>
+    <string name="Delete">Delete</string>
+    <string name="orderList">Order List</string>
+    <string name="Order1">Order 1</string>
+    <string name="Order2">Order 2</string>
+    <string name="Order3">Order 3</string>
+    <string name="createProposal">Create Proposal</string>
     <string name="entUID">ENTER USER ID</string>
     <string name="txtprofile">Profile</string>
     <string name="btnModify">Modify Profile</string>
@@ -53,5 +75,5 @@
     <string name="txtMail">Email</string>
     <string name="btnSignUp">Sign Up</string>
     <string name="txtReset">Reset Account</string>
-
+  
 </resources>
