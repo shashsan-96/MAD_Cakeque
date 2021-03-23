@@ -1,15 +1,15 @@
 <resources>
+
     <string name="app_name">cakeque</string>
     <string name="welcome_note">Welcome to cakeque!</string>
-    <string name="btn1h">create your profile</string>
-    <string name="btn2h">create your order</string>
-    <string name="btn3h">create your proposal</string>
+    <string name="btn1h"> profile</string>
+    <string name="btn2h"> order</string>
+    <string name="btn3h"> proposal</string>
     <string name="btn4h">Give us your feedback</string>
     <string name="btn1h1">butnh1</string>
     <string name="btn2h1">butnh2</string>
     <string name="btn3h1">butnh3</string>
     <string name="btn4h1">butnh4</string>
-
     <string name="btn1">Create Order</string>
     <string name="orderDashboard">Orders</string>
     <string name="allOrdersView">View All Orders</string>
@@ -33,4 +33,47 @@
     <string name="Order2">Order 2</string>
     <string name="Order3">Order 3</string>
     <string name="createProposal">Create Proposal</string>
+    <string name="entUID">ENTER USER ID</string>
+    <string name="txtprofile">Profile</string>
+    <string name="btnModify">Modify Profile</string>
+    <string name="btnCreate">Create Profile</string>
+    <string name="btnView">View Profile</string>
+    <string name="txtCreatePage">Create Profile</string>
+    <string name="Fname">First Name</string>
+    <string name="hint1">Enter First Name Here</string>
+    <string name="Lname">Last Name</string>
+    <string name="hint2">Enter Last Name Here</string>
+    <string name="UID">User ID</string>
+    <string name="hint3">Enter User ID Here</string>
+    <string name="Qualifications">Qualifications</string>
+    <string name="hint4">Enter Qualifications Here</string>
+    <string name="Contact">Contact No</string>
+    <string name="hint5">Enter Contact No Here</string>
+    <string name="Location">Location</string>
+    <string name="hint6">Enter Location Here</string>
+    <string name="txtUpload">Upload Images</string>
+    <string name="btnUpload">Upload</string>
+    <string name="btnProCreate">Create</string>
+    <string name="txtdisplay">Search Profiles</string>
+    <string name="txtExplain"> Make easier to get customer attraction</string>
+    <string name="txtProId">Profile ID </string>
+    <string name="txtSearchId">Enter User ID </string>
+    <string name="btnSearch">Search</string>
+    <string name="txtPro1">Profile 1 Details</string>
+    <string name="txtPro2">Profile 2 Details</string>
+    <string name="txtProfileOne">User Profile</string>
+    <string name="txtModify">Change Your Profile</string>
+    <string name="btnUpdate">Update</string>
+    <string name="btnDelete">Delete</string>
+    <string name="txtUser">User Name</string>
+    <string name="txtLogIn">Login</string>
+    <string name="txtPass">Password</string>
+    <string name="btnLogIn">Login</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnSignUp1">Sign Up</string>
+    <string name="txtRegister">Register</string>
+    <string name="txtMail">Email</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtReset">Reset Account</string>
+  
 </resources>
