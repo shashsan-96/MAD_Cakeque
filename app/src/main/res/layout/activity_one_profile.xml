@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightPink"
+    android:background="@drawable/balloon"
     tools:context=".OneProfile">
 
     <TextView
@@ -33,30 +33,29 @@
 
     <TextView
         android:id="@+id/txtProfileOne"
-        android:layout_width="146dp"
-        android:layout_height="59dp"
+        android:layout_width="247dp"
+        android:layout_height="61dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/txtProfileOne"
         android:textColor="@color/black"
         android:textSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintHorizontal_bias="0.701"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="402dp"
-        android:layout_height="387dp"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
         android:background="@drawable/footshape"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtPro1"

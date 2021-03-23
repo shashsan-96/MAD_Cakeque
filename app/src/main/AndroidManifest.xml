@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cakeque">
-        <activity android:name=".ModifyPage"></activity>
+        <activity android:name=".Reset"></activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".LogIn" />
+        <activity android:name=".ModifyPage" />
         <activity android:name=".OneProfile" />
         <activity android:name=".ViewPage" />
         <activity android:name=".CreateProfile" />

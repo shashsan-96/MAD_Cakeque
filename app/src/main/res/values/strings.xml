@@ -37,8 +37,19 @@
     <string name="btnSearch">Search</string>
     <string name="txtPro1">Profile 1 Details</string>
     <string name="txtPro2">Profile 2 Details</string>
-    <string name="txtProfileOne">Profile</string>
-    <string name="txtModify">Modificational Page</string>
+    <string name="txtProfileOne">User Profile</string>
+    <string name="txtModify">Change Your Profile</string>
     <string name="btnUpdate">Update</string>
     <string name="btnDelete">Delete</string>
+    <string name="txtUser">User Name</string>
+    <string name="txtLogIn">Login</string>
+    <string name="txtPass">Password</string>
+    <string name="btnLogIn">Login</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnSignUp1">Sign Up</string>
+    <string name="txtRegister">Register</string>
+    <string name="txtMail">Email</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtReset">Reset Account</string>
+
 </resources>
