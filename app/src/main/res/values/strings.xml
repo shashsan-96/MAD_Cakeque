@@ -104,5 +104,11 @@
     <string name="txtMail">Email</string>
     <string name="btnSignUp">Sign Up</string>
     <string name="txtReset">Reset Account</string>
-  
+
+
+
+
+    <!--profile-->
+
+
 </resources>
