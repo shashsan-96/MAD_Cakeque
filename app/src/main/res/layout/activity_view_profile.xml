@@ -97,7 +97,7 @@
         android:layout_width="43dp"
         android:layout_height="40dp"
         android:background="@android:drawable/ic_menu_search"
-        app:backgroundTint="@color/dogeblu"
+        app:backgroundTint="@color/dogeblu1"
         app:backgroundTintMode="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

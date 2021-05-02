@@ -95,7 +95,7 @@
     <string name="btnUpdate">Update</string>
     <string name="btnDelete">Delete</string>
     <string name="txtUser">User Name</string>
-    <string name="txtLogIn">Login</string>
+    <string name="txtLogIn">Welcome</string>
     <string name="txtPass">Password</string>
     <string name="btnLogIn">Login</string>
     <string name="btnReset">Reset</string>
@@ -104,5 +104,6 @@
     <string name="txtMail">Email</string>
     <string name="btnSignUp">Sign Up</string>
     <string name="txtReset">Reset Account</string>
-  
+    <string name="txtLoginUser"> Login</string>
+
 </resources>
