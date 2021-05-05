@@ -21,7 +21,7 @@
         app:lineHeight="20dp" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/contact"
         android:layout_width="266dp"
         android:layout_height="42dp"
         android:hint="email or phone number"
@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.77" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/submit"
         android:layout_width="156dp"
         android:layout_height="59dp"
         android:text="Submit"
@@ -114,8 +114,8 @@
         app:layout_constraintVertical_bias="0.376"
         app:lineHeight="20dp" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editText"
+    <EditText
+        android:id="@+id/proposition"
         android:layout_width="276dp"
         android:layout_height="43dp"
         android:hint="add proposition"
@@ -139,8 +139,8 @@
         app:layout_constraintVertical_bias="0.57"
         app:lineHeight="20dp" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editText4"
+    <EditText
+        android:id="@+id/delivery"
         android:layout_width="283dp"
         android:layout_height="51dp"
         android:hint="add cost"
@@ -177,8 +177,8 @@
         app:layout_constraintVertical_bias="0.472"
         app:lineHeight="20dp" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editText3"
+    <EditText
+        android:id="@+id/cakecost"
         android:layout_width="275dp"
         android:layout_height="45dp"
         android:hint="add cost"
@@ -220,8 +220,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13"
         app:layout_constraintVertical_bias="0.038" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/editText6"
+    <EditText
+        android:id="@+id/total"
         android:layout_width="163dp"
         android:layout_height="40dp"
         android:hint="total cost"
@@ -316,7 +316,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.653" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
+        android:id="@+id/userid"
         android:layout_width="275dp"
         android:layout_height="43dp"
         android:hint="add user id"
@@ -327,7 +328,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.186" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
+        android:id="@+id/orderid"
         android:layout_width="273dp"
         android:layout_height="49dp"
         android:hint="add order id"

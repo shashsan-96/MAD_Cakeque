@@ -13,7 +13,7 @@
         <activity android:name=".view_profile"></activity>
         <activity android:name=".proposal_modify" />
         <activity android:name=".create_proposal" />
-        <activity android:name=".proposal_dashboard" />
+        <activity android:name=".LogIn" />
         <activity android:name=".OrderList"></activity>
         <activity android:name=".ModifyOrder" />
         <activity android:name=".CreateOrder" />
@@ -28,7 +28,7 @@
         <activity android:name=".ProfileDashboard" />
 
 
-        <activity android:name=".LogIn">
+        <activity android:name=".proposal_dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
