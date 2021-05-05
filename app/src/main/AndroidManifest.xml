@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cakeque">
-
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,8 +27,8 @@
         <activity android:name=".OneProfile" />
         <activity android:name=".ViewPage" />
         <activity android:name=".CreateProfile" />
-        <activity android:name=".ProfileDashboard" />
-        <activity android:name=".LogIn">
+        <activity android:name=".LogIn" />
+        <activity android:name=".ProfileDashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
