@@ -8,12 +8,14 @@ import android.content.Intent;
 import android.view.View;
 
 public class view_profile extends AppCompatActivity {
+
     public Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_profile);
+
 
         button =(Button) findViewById(R.id.cakebtn3);
         button.setOnClickListener(new View.OnClickListener() {

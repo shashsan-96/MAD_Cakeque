@@ -45,7 +45,7 @@ public class create_proposal extends AppCompatActivity {
                         edttotalcost.getText().toString(),
                         edtcontacts.getText().toString()  );
 
-                if(isInserted = true)
+                if(isInserted == true)
                     Toast.makeText(create_proposal.this,"Proposal Created",Toast.LENGTH_LONG).show();
 
                 else

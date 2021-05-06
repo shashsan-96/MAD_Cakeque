@@ -2,6 +2,7 @@ package com.example.cakeque;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -57,5 +58,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
     }
 
+    public Cursor getAllData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from "+TABLE_NAME,null);
+        return  res;
+    }
+
+   
+
+    public boolean updateData(String userid,String orderid,String proposition,String cakecost,String delivercost,String totalcost, String contacts){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_1,userid);
+        contentValues.put(COL_2,orderid);
+        contentValues.put(COL_3,proposition);
+        contentValues.put(COL_4,cakecost);
+        contentValues.put(COL_5,delivercost);
+        contentValues.put(COL_6,totalcost);
+        contentValues.put(COL_7,contacts);
+        db.update(TABLE_NAME, contentValues, "orderid = ?", new String[] { orderid });
+        return true;
+    }
+
+    public Integer deleteData (String orderid){
+        SQLiteDatabase db = this.getWritableDatabase();
+        return  db.delete(TABLE_NAME, "ORDERID = ?",new String[] {orderid});
+
+
+    }
 
 }
