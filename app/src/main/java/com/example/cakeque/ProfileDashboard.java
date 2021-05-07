@@ -31,7 +31,7 @@ public class ProfileDashboard extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(ProfileDashboard.this,CreateProfile.class);
+                Intent intent1 = new Intent(ProfileDashboard.this,create_proposal.class);
                 startActivity(intent1);
             }
         });
