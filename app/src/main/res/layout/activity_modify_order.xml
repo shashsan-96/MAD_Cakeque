@@ -14,7 +14,7 @@
         android:background="@drawable/roundrec1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -30,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <TextView
         android:id="@+id/textView9"
@@ -49,7 +49,7 @@
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:background="@drawable/formoval"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,6 +67,7 @@
         android:text="@string/orderId"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
@@ -80,7 +81,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/enterOID"
+        android:hint="@string/enterOID"
         android:textColor="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +92,7 @@
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:background="@drawable/formoval"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,9 +107,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="@string/fName"
+        android:text="@string/Name"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
@@ -122,7 +124,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/enterFName"
+        android:hint="@string/enterName"
         android:textColor="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +135,7 @@
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:background="@drawable/formoval"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -151,6 +153,7 @@
         android:text="@string/Requirements"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
@@ -164,7 +167,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/enterRequirements"
+        android:hint="@string/enterRequirements"
         android:textColor="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,7 +178,7 @@
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:background="@drawable/formoval"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -193,6 +196,7 @@
         android:text="@string/Budget"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
@@ -207,7 +211,7 @@
         android:layout_marginStart="176dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/enterBudget"
+        android:hint="@string/enterBudget"
         android:textColor="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -216,7 +220,7 @@
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="400dp"
+        android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:background="@drawable/formoval"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -234,6 +238,7 @@
         android:text="@string/Date"
         android:textColor="@color/black"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
@@ -247,7 +252,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/deliverDate"
+        android:hint="@string/deliverDate"
         android:textColor="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
