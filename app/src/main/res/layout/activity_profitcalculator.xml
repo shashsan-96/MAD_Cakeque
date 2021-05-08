@@ -4,30 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cakeback"
     tools:context=".profitcalculator">
+
+    <Button
+        android:id="@+id/btn_calc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate Total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
 
     <TextView
         android:id="@+id/text_tipTotal"
         android:layout_width="319dp"
         android:layout_height="54dp"
+        android:background="@drawable/formoval"
         android:focusable="true"
         android:fontFamily="sans-serif-black"
-        android:text="Total"
+        android:text="   Total"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <EditText
         android:id="@+id/edit_billAmount"
         android:layout_width="291dp"
         android:layout_height="55dp"
+        android:background="@drawable/formoval"
         android:ems="10"
-        android:hint="Enter your total cost for cake"
 
+        android:hint="   Enter your total cost for cake"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,27 +55,29 @@
         android:id="@+id/profit_seekbar"
         android:layout_width="226dp"
         android:layout_height="43dp"
+        android:background="@drawable/formoval"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.325" />
 
     <TextView
         android:id="@+id/text_tip"
-        android:layout_width="311dp"
-        android:layout_height="54dp"
+        android:layout_width="316dp"
+        android:layout_height="60dp"
+        android:background="@drawable/formoval"
         android:focusable="true"
         android:fontFamily="sans-serif-black"
-        android:text="Tip"
+        android:text="   Profit"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
+        app:layout_constraintVertical_bias="0.57" />
 
     <Button
         android:id="@+id/btn_calc"
@@ -78,10 +95,24 @@
         android:id="@+id/Text_seek"
         android:layout_width="84dp"
         android:layout_height="45dp"
+        android:background="@drawable/formoval"
         app:layout_constraintBottom_toBottomOf="@+id/profit_seekbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/profit_seekbar"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="414dp"
+        android:layout_height="109dp"
+        android:background="@drawable/headershape"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
 </androidx.constraintlayout.widget.ConstraintLayout>

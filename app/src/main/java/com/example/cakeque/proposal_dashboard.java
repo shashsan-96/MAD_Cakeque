@@ -1,16 +1,16 @@
 package com.example.cakeque;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-import android.widget.Button;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class proposal_dashboard extends AppCompatActivity {
     public Button button;
     public Button button_profit;
-    public Button button3;
+    public Button viewproposal;
     public Button button4;
 
 
@@ -80,6 +80,21 @@ public class proposal_dashboard extends AppCompatActivity {
 
                 Intent intent5= new Intent(proposal_dashboard.this,profitcalculator.class);
                 startActivity(intent5);
+
+
+            }
+
+        });
+
+
+        viewproposal =(Button) findViewById(R.id.viewproposal);
+        viewproposal.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent6= new Intent(proposal_dashboard.this,ViewAllProposal.class);
+                startActivity(intent6);
 
 
             }

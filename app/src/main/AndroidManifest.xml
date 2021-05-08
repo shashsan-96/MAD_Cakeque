@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cakeque">
-        <activity android:name=".profitcalculator"></activity>
+        <activity android:name=".ViewAllProposal"></activity>
+        <activity android:name=".profitcalculator" />
         <activity android:name=".proposal_dashboard" />
         <activity android:name=".ViewCakeActivity" />
         <activity android:name=".LogIn" />

@@ -1,7 +1,5 @@
 package com.example.cakeque;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +8,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class profitcalculator extends AppCompatActivity {
 
     private EditText billAmount;
@@ -17,6 +17,7 @@ public class profitcalculator extends AppCompatActivity {
     private TextView seekbarTextview;
     private TextView tipTextView;
     private Button calButton;
+    private Button calButton2;
     private  TextView totalTextView;
     private  int seekbarPrecentage;
     private  Float billamount;
@@ -31,6 +32,7 @@ public class profitcalculator extends AppCompatActivity {
         seekbarTextview = findViewById(R.id.Text_seek);
         tipTextView = findViewById(R.id.text_tip);
         calButton = findViewById(R.id.btn_calc);
+        calButton2 = findViewById(R.id.btn_calc2);
         totalTextView = findViewById(R.id.text_tipTotal);
 
         seekbarTextview.setText(String.valueOf(seekbar.getProgress())+"%");
@@ -58,6 +60,21 @@ public class profitcalculator extends AppCompatActivity {
                 calculate();
             }
         });
+
+        calButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Float result= 0.0f;
+
+                billamount= Float.parseFloat(billAmount.getText().toString());
+                result = billamount * seekbarPrecentage / 100;
+
+                calcTotal(billamount , result);
+                totalTextView.setText("Charge Ammount Rs."+(billamount+result));
+
+            }
+        });
     }
 
     public void calculate(){
@@ -70,7 +87,7 @@ public class profitcalculator extends AppCompatActivity {
             result = billamount * seekbarPrecentage / 100;
 
             tipTextView.setText("Profit Rs."+String.valueOf(result));
-            totalTextView.setText("Charge Ammount Rs."+(billamount+result));
+
         }else{
 
             Toast.makeText(this, "please enter your cost for cake", Toast.LENGTH_SHORT).show();
@@ -79,5 +96,16 @@ public class profitcalculator extends AppCompatActivity {
 
 
 
+
+
         }
+
+    public Float calcTotal(Float billamount, Float seekbarPrecentage){
+
+
+        return billamount + (billamount * seekbarPrecentage /100);
+
     }
+
+
+}
