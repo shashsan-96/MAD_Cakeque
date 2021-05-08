@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.provider.ContactsContract;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +16,7 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     //Database name
-    private static final String DATABASE_NAME = "ORDER_DATABASE";
+    private static final String DATABASE_NAME = "cake_database";
 
     //Database table name
     private static final String TABLE_NAME = "ORDERS";
@@ -83,5 +84,25 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
         }
         cursor.close();
         return storeOrder;
+    }
+
+    //Create updateOrder method
+    public  void updateOrder(OrderModelClass orderModelClass){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DatabaseHelperClass.NAME,orderModelClass.getName());
+        contentValues.put(DatabaseHelperClass.ADDRESS,orderModelClass.getAddress());
+        contentValues.put(DatabaseHelperClass.REQUIREMENTS,orderModelClass.getRequirements());
+        contentValues.put(DatabaseHelperClass.BUDGET,orderModelClass.getBudget());
+        contentValues.put(DatabaseHelperClass.DELIVERY_DATE,orderModelClass.getdDate());
+        sqLiteDatabase = this.getWritableDatabase();
+        sqLiteDatabase.update(TABLE_NAME,contentValues,ORDER_ID + " = ?" , new String[]
+                {String.valueOf(orderModelClass.getOrderId())});
+    }
+
+    //Create deleteOrder method
+    public void deleteOrder(int id){
+        sqLiteDatabase = this.getWritableDatabase();
+        sqLiteDatabase.delete(TABLE_NAME, ORDER_ID + " = ? ", new String[]
+                {String.valueOf(id)});
     }
 }

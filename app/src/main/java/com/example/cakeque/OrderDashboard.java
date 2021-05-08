@@ -11,7 +11,7 @@ import android.view.View;
 public class OrderDashboard extends AppCompatActivity {
     public Button viewButton;
     public Button button1;
-    public Button button2;
+    public Button modifyBtn;
     public Button cakebtn;
 
     @Override
@@ -39,9 +39,9 @@ public class OrderDashboard extends AppCompatActivity {
             }
         });
 
-        button2 = (Button) findViewById(R.id.button17);
+        modifyBtn = (Button) findViewById(R.id.modifyOrder);
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        modifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(OrderDashboard.this,ModifyOrder.class);
