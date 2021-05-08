@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.039" />
 
     <Button
-        android:id="@+id/viewprop"
+        android:id="@+id/viewproposal"
         android:layout_width="237dp"
         android:layout_height="59dp"
         android:drawableRight="@drawable/view"
@@ -78,20 +78,8 @@
         app:strokeColor="@color/black"
         app:strokeWidth="1dp" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="251dp"
-        android:layout_height="137dp"
-        android:background="@drawable/roundrectangle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.824" />
-
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/modify_btn"
         android:layout_width="232dp"
         android:layout_height="59dp"
         android:drawableRight="@drawable/edit2"
@@ -107,21 +95,6 @@
         app:layout_constraintVertical_bias="0.831"
         app:strokeColor="@color/black"
         app:strokeWidth="1dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="205dp"
-        android:layout_height="49dp"
-        android:drawableRight="@drawable/edit"
-        android:ems="10"
-        android:hint="@string/pro_modifyhint"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.747" />
 
     <TextView
         android:id="@+id/textView6"
@@ -153,21 +126,20 @@
         app:layout_constraintVertical_bias="0.026" />
 
     <Button
-        android:id="@+id/btnAll"
-        android:layout_width="237dp"
-        android:layout_height="59dp"
-        android:text="View list"
-
+        android:id="@+id/button_profit"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:text="profit calculation"
         android:textColor="@color/black"
-        app:backgroundTint="@color/soft_pink"
+        app:backgroundTint="@color/pink_back"
+        app:backgroundTintMode="screen"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321"
-        app:strokeColor="@color/black"
-       />
+        app:layout_constraintVertical_bias="0.691"
+        app:strokeColor="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,20 +16,20 @@
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:textColor="#000"
-        android:textStyle="bold"
         android:id="@+id/edittext_User"
-        android:text="Name"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
+        android:text="UserId"
+        android:textColor="#000"
         android:textSize="18sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:textStyle="bold" />
 
     <EditText
         android:textColor="#000"
         android:textStyle="bold"
         android:id="@+id/edittext_Order"
-        android:text="Email"
+        android:text="Orderid"
         android:layout_margin="5dp"
         android:textSize="18sp"
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
         android:textColor="#000"
         android:textStyle="bold"
         android:id="@+id/edittext_Proposition"
-        android:text="Name"
+        android:text="Proposition"
         android:layout_margin="5dp"
         android:textSize="18sp"
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
         android:textColor="#000"
         android:textStyle="bold"
         android:id="@+id/edittext_Cakecost"
-        android:text="Email"
+        android:text="Cake cost"
         android:layout_margin="5dp"
         android:textSize="18sp"
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
         android:textColor="#000"
         android:textStyle="bold"
         android:id="@+id/edittext_Delivercost"
-        android:text="Name"
+        android:text="Delivery cost"
         android:layout_margin="5dp"
         android:textSize="18sp"
         android:layout_width="match_parent"

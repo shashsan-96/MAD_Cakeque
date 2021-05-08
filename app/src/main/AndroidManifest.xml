@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cakeque">
-        <activity android:name=".ViewCakeActivity"></activity>
+        <activity android:name=".profitcalculator"></activity>
         <activity android:name=".proposal_dashboard" />
+        <activity android:name=".ViewCakeActivity" />
         <activity android:name=".LogIn" />
         <activity android:name=".OrderList" />
         <activity android:name=".ModifyOrder" />
@@ -18,13 +19,8 @@
         <activity android:name=".OrderDashboard" />
         <activity android:name=".Reset" />
         <activity android:name=".SignUp" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ModifyPage" />
-        <activity android:name=".OneProfile" />
-        <activity android:name=".ViewPage" />
-        <activity android:name=".CreateProfile" />
-        <activity android:name=".ProfileDashboard" />
-        <activity android:name=".create_proposal">
+        <activity android:name=".create_proposal" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

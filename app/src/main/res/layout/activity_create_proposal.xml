@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+
+android:layout_height="match_parent"
+tools:context=".create_proposal">
+
+<EditText
+    android:id="@+id/edittext_user"
+    android:layout_margin="5dp"
+    android:hint="Enter Name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+<EditText
+    android:id="@+id/edittext_order"
+    android:layout_margin="5dp"
+    android:hint="Enter Email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<EditText
+    android:id="@+id/edittext_proposition"
+    android:layout_margin="5dp"
+    android:hint="Enter Email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<EditText
+    android:id="@+id/edittext_cakecost"
+    android:layout_margin="5dp"
+    android:hint="Enter Email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<EditText
+    android:id="@+id/edittext_delivercost"
+    android:layout_margin="5dp"
+    android:hint="Enter Email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<EditText
+    android:id="@+id/edittext_contacts"
+    android:layout_margin="5dp"
+    android:hint="Enter conta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+<Button
+    android:textStyle="bold"
+    android:layout_margin="5dp"
+    android:id="@+id/button_add"
+    android:text="Add proposal"
+    android:background="#388E3C"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+<Button
+    android:textStyle="bold"
+    android:layout_margin="5dp"
+    android:id="@+id/button_view"
+    android:text="View proposal"
+    android:background="#0288D1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>
