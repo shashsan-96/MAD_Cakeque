@@ -19,7 +19,7 @@ public class OrderDashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_dashboard);
 
-        viewButton = (Button) findViewById(R.id.ViewOrders);
+        viewButton = (Button) findViewById(R.id.ViewOrdersBtn);
 
         viewButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +29,7 @@ public class OrderDashboard extends AppCompatActivity {
             }
         });
 
-        button1 = (Button) findViewById(R.id.button15);
+        button1 = (Button) findViewById(R.id.createOrderBtn);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +39,7 @@ public class OrderDashboard extends AppCompatActivity {
             }
         });
 
-        modifyBtn = (Button) findViewById(R.id.modifyOrder);
+        modifyBtn = (Button) findViewById(R.id.modifyOrderBtn);
 
         modifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
