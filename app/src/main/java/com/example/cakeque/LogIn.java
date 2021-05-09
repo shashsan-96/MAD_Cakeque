@@ -1,37 +1,62 @@
 package com.example.cakeque;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-import android.widget.Button;
-import android.content.Intent;
-import android.view.View;
+public class  LogIn  extends AppCompatActivity {
 
-public class LogIn extends AppCompatActivity {
-    public Button button;
-    public Button button1;
-
+    private EditText loginUsername , loginPassword;
+    private Button loginButton,signup;
+    private DataHelper myDb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        button = (Button) findViewById(R.id.btnReset1);
-        button.setOnClickListener(new View.OnClickListener() {
+        loginUsername = findViewById(R.id.loginUser);
+        loginPassword = findViewById(R.id.loginpass);
+        loginButton = findViewById(R.id.btnLogIn);
+        signup = findViewById(R.id.btnSignUp);
+
+
+        myDb = new DataHelper(this);
+
+        loginUser();
+
+
+        signup = (Button) findViewById(R.id.btnSignUp);
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LogIn.this,Reset.class);
+                Intent intent = new Intent(LogIn.this, SignUp.class);
                 startActivity(intent);
             }
         });
 
-        button1 = (Button) findViewById(R.id.btnSignUp1);
-        button1.setOnClickListener(new View.OnClickListener() {
+    }
+    private void loginUser(){
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(LogIn.this,SignUp.class);
-                startActivity(intent1);
+                boolean var = myDb.checkUser(loginUsername.getText().toString() , loginPassword.getText().toString());
+                if (var){
+                    Toast.makeText( LogIn .this, "Login Successfully", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent( LogIn .this , MainActivity.class));
+                    finish();
+                }else{
+                    Toast.makeText( LogIn .this, "Login Failed !!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
+
+
+
+
 }

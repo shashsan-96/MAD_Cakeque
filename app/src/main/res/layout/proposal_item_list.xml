@@ -1,110 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/cakeback"
-    android:orientation="vertical">
+    android:layout_height="700dp"
+    android:orientation="vertical"
+    android:background="@color/soft_pink">
+
 
     <TextView
         android:id="@+id/text_id"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-black"
         android:text="Id"
-        android:textColor="#000"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/textView_OrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-27dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/formoval" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="userId"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-42dp"
+        android:layout_marginLeft="12dp"/>
 
     <EditText
         android:id="@+id/edittext_User"
-        android:layout_width="398dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="UserId"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/txtUser"
+        android:inputType="textPersonName"
+        android:textColor="@color/gray"
+        android:layout_marginTop="-42dp"
+        android:layout_marginLeft="155dp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/formoval"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/orderid"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-42dp"/>
 
     <EditText
         android:id="@+id/edittext_Order"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Orderid"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:ems="10"
+        android:hint="enter order id"
+        android:inputType="textPersonName"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="-42dp"/>
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/formoval"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/proposition"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-42dp" />
 
     <EditText
         android:id="@+id/edittext_Proposition"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Proposition"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:ems="10"
+        android:hint="Enter proposition"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="-47dp"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/formoval"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="102dp"
+        android:layout_height="38dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/cake_cost"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-42dp"/>
 
     <EditText
         android:id="@+id/edittext_Cakecost"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Cake cost"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:ems="10"
+        android:hint="Enter cake cost"
+        android:inputType="textPersonName"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="-48dp"/>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/formoval"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Deliver cost"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-47dp"/>
 
     <EditText
         android:id="@+id/edittext_Delivercost"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="Delivery cost"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter delivercost"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="-36dp"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/formoval"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Contacts"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-47dp"/>
 
     <EditText
         android:id="@+id/edittext_Contacts"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:text="contcts"
-        android:textColor="#000"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Contacts"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="-36dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button_edit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="2"
-            android:background="#0288D1"
-            android:text="Edit" />
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Update"
+        android:textSize="20dp"
+        app:cornerRadius="10dp" />
 
-        <Button
-            android:id="@+id/button_delete"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="2dp"
-            android:layout_weight="2"
-            android:background="#D32F2F"
-            android:text="Delete" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="-65dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Delete"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:cornerRadius="10dp" />
 
     <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
         android:layout_margin="5dp"
-        android:background="#C5C5C5" />
-
+        android:background="#C5C5C5"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
 </LinearLayout>

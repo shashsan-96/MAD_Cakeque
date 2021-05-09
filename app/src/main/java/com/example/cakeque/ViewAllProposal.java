@@ -30,7 +30,7 @@ public class ViewAllProposal extends AppCompatActivity {
             proAdapterView proposalAdapterClass = new proAdapterView(cakeModels, ViewAllProposal.this);
             recyclerView.setAdapter(proposalAdapterClass);
         } else {
-            Toast.makeText(this, "There is no employee in the database", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "There is no proposal you recently added", Toast.LENGTH_SHORT).show();
         }
     }
 }

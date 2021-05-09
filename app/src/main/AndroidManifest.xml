@@ -13,7 +13,7 @@
         <activity android:name=".profitcalculator" />
         <activity android:name=".proposal_dashboard" />
         <activity android:name=".ViewCakeActivity" />
-        <activity android:name=".LogIn" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".OrderList" />
         <activity android:name=".ModifyOrder" />
         <activity android:name=".CreateOrder" />
@@ -21,7 +21,7 @@
         <activity android:name=".Reset" />
         <activity android:name=".SignUp" />
         <activity android:name=".create_proposal" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LogIn">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

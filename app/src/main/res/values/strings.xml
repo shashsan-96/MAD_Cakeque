@@ -21,7 +21,7 @@
     <string name="prod_note">Win the hearts of customers by making
         proposals or choose the proposal of your dream!</string>
     <!--proposal_create-->
-    <string name="textview7pcreate">Create proposal</string>
+    <string name="textview7pcreate">Hey fill out this fields to Create proposal</string>
     <string name="proposalid">user id</string>
     <string name="orderid">Order id</string>
     <string name="proposition">proposition</string>
@@ -30,7 +30,14 @@
     <string name="deliver_cost">Deliver fee</string>
     <string name="tot_cost">Total_cost</string>
     <string name="calbtn">Calculate</string>
-    <string name="sendbtn">Send</string>
+    <string name="sendbtn">Send your proposal</string>
+
+    <string name="calc1">Enter Total cost for cake</string>
+    <string name="calc2">Set Expected profit margin</string>
+    <string name="calc3">Net profit</string>
+    <string name="calc4">The Amount should be paid by customer</string>
+
+
     <!--proposl modify-->
     <string name="uploadbtn">Update</string>
     <string name="deletebtn">Delete</string>

@@ -47,7 +47,6 @@ public class ProposalAdapterClass extends RecyclerView.Adapter<ProposalAdapterCl
         holder.edit_delivercost.setText(cakeModel.getDelivercost());
         holder.edit_contacts.setText(cakeModel.getContacts());
 
-
         holder.button_Edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,9 +56,10 @@ public class ProposalAdapterClass extends RecyclerView.Adapter<ProposalAdapterCl
                 String stringProposition = holder.edit_proposition.getText().toString();
                 String stringCakecost =holder.edit_cakecost.getText().toString();
                 String stringDelivercost = holder.edit_delivercost.getText().toString();
-                String stringContacts = holder.edit_cakecost.getText().toString();
+                String stringContacts = holder.edit_contacts.getText().toString();
 
-                databaseHelperClass.updateProposal(new CakeModel(cakeModel.getId(),stringUser,stringOrder,stringProposition,stringCakecost,stringDelivercost,stringContacts));
+                databaseHelperClass.updateProposal(new CakeModel(cakeModel.getId(),stringUser,stringOrder,stringProposition,
+                        stringCakecost,stringDelivercost,stringContacts));
                 notifyDataSetChanged();
                 ((Activity) context).finish();
                 context.startActivity(((Activity) context).getIntent());

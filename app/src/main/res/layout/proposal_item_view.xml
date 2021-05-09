@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+
     android:orientation="vertical"
     android:background="@color/purple_200"
     android:layout_height="270dp">
+
+
+
+
 
     <TextView
         android:id="@+id/edittext_User1"
@@ -47,7 +54,7 @@
         android:layout_marginStart="130dp"/>
 
     <TextView
-        android:id="@+id/text_Address"
+        android:id="@+id/text_1"
         android:textColor="#000"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
@@ -66,7 +73,7 @@
         android:layout_marginStart="130dp"/>
 
     <TextView
-        android:id="@+id/text_Req"
+        android:id="@+id/text_2"
         android:textColor="#000"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
@@ -86,7 +93,7 @@
 
 
     <TextView
-        android:id="@+id/text_Budget"
+        android:id="@+id/text_3"
         android:textColor="#000"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
@@ -105,7 +112,7 @@
         android:layout_marginStart="130dp"/>
 
     <TextView
-        android:id="@+id/text_Date"
+        android:id="@+id/text_4"
         android:textColor="#000"
         android:layout_width="220dp"
         android:layout_height="wrap_content"

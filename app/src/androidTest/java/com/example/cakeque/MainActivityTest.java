@@ -16,14 +16,11 @@ public class MainActivityTest {
     @Rule
     public IntentsTestRule<MainActivity> intentsTestRule = new IntentsTestRule<>(MainActivity.class);
 
-
-
     @Test
     public void testIntent(){
         onView(withId(R.id.h_propobtn)).perform(click());
         intended(hasComponent(proposal_dashboard.class.getName()));
     }
-
     @Test
     public void testIntent1(){
         onView(withId(R.id.button2)).perform(click());

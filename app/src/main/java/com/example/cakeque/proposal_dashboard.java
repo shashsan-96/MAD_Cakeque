@@ -13,18 +13,11 @@ public class proposal_dashboard extends AppCompatActivity {
     public Button viewproposal;
     public Button button4;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proposal_dashboard);
         button =(Button) findViewById(R.id.button9);
-
-
-
-
 
 
         button.setOnClickListener(new View.OnClickListener()
@@ -33,9 +26,6 @@ public class proposal_dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(proposal_dashboard.this,create_proposal.class);
                 startActivity(intent);
-
-
-
 
             }
         });
@@ -49,10 +39,7 @@ public class proposal_dashboard extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent4= new Intent(proposal_dashboard.this,MainActivity.class);
-                startActivity(intent4);
-
-
-            }
+                startActivity(intent4); }
 
         });
 
@@ -65,8 +52,6 @@ public class proposal_dashboard extends AppCompatActivity {
 
                 Intent intent4= new Intent(proposal_dashboard.this,ViewCakeActivity.class);
                 startActivity(intent4);
-
-
             }
 
         });
@@ -80,8 +65,6 @@ public class proposal_dashboard extends AppCompatActivity {
 
                 Intent intent5= new Intent(proposal_dashboard.this,profitcalculator.class);
                 startActivity(intent5);
-
-
             }
 
         });
@@ -95,8 +78,6 @@ public class proposal_dashboard extends AppCompatActivity {
 
                 Intent intent6= new Intent(proposal_dashboard.this,ViewAllProposal.class);
                 startActivity(intent6);
-
-
             }
 
         });

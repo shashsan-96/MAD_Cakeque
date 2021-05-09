@@ -1,11 +1,11 @@
 package com.example.cakeque;
 
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -28,7 +28,7 @@ public class ViewCakeActivity extends AppCompatActivity {
             ProposalAdapterClass proposalAdapterClass = new ProposalAdapterClass(cakeModels, ViewCakeActivity.this);
             recyclerView.setAdapter(proposalAdapterClass);
         }else {
-            Toast.makeText(this, "There is no employee in the database", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "There is no proposals recently you added", Toast.LENGTH_SHORT).show();
         }
 
 

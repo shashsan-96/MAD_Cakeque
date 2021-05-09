@@ -41,12 +41,9 @@ public class profitcalculator extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 seekbarTextview.setText(String.valueOf(seekBar.getProgress())+"%");
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-
             }
-
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
 
@@ -92,20 +89,9 @@ public class profitcalculator extends AppCompatActivity {
 
             Toast.makeText(this, "please enter your cost for cake", Toast.LENGTH_SHORT).show();
 
-        }
-
-
-
-
-
-        }
+        } }
 
     public Float calcTotal(Float billamount, Float seekbarPrecentage){
-
-
         return billamount + (billamount * seekbarPrecentage /100);
-
     }
-
-
 }
