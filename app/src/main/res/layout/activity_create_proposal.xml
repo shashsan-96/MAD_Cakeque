@@ -1,108 +1,167 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@color/bacgroundpink"
-    android:orientation="vertical"
-    tools:context=".create_proposal">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="140dp"
-
-
-
-
-        >
-
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/headershape"
-            android:text="@string/textview7pcreate"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-
-            android:textColor="@color/white"
-
-            android:textSize="25dp" />
-
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/edittext_user"
-        android:layout_width="match_parent"
-
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/createformhead"
-        android:hint="     Enter User Id" />
-
-    <EditText
-        android:id="@+id/edittext_order"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/createformhead"
-        android:hint="    Enter Order Id" />
+    tools:context=".CreateOrder">
 
     <EditText
         android:id="@+id/edittext_proposition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/createformhead"
-        android:hint="    Enter Your proposition" />
-
-    <EditText
-        android:id="@+id/edittext_cakecost"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/createformhead"
-        android:hint="    Enter Cake Cost" />
+        android:backgroundTint="@color/dogeblu"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Your proposition"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_cakecost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_order" />
 
     <EditText
         android:id="@+id/edittext_delivercost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/createformhead"
-        android:hint="    Enter Deliver Cost" />
-
+        android:backgroundTint="@color/dogeblu"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Deliver Cost"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_contacts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_cakecost" />
 
     <EditText
         android:id="@+id/edittext_contacts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@drawable/createformhead"
-        android:hint="     Enter Contact details" />
+        android:backgroundTint="@color/dogeblu"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Contact details"
+        android:inputType="phone"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_delivercost" />
+
+    <EditText
+        android:id="@+id/edittext_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dogeblu"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Order Id"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_proposition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_user" />
+
+    <EditText
+        android:id="@+id/edittext_cakecost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dogeblu"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Cake Cost"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_delivercost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_proposition" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="93dp"
+        android:layout_height="89dp"
+        android:background="@drawable/homebut_foreground"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+
+    android:backgroundTint="@color/dogeblu"
+
 
     <Button
         android:id="@+id/button_add"
+        android:layout_width="167dp"
+        android:layout_height="68dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Submit"
+        android:textSize="20dp"
+        app:backgroundTint="@color/dogeblu"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <EditText
+        android:id="@+id/edittext_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="#388E3C"
-        android:text="@string/sendbtn"
-        android:textStyle="bold"
-        app:backgroundTint="@color/dogeblu" />
+        android:backgroundTint="@color/dogeblu"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter User Id ex:AWE34"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="412dp"
+        android:layout_height="117dp"
+        android:background="@drawable/roundrec1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/button_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:background="@color/bacgroundpink"
-        android:text="View proposals"
-        android:textStyle="bold"
-        app:backgroundTint="@color/teal_200" />
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="312dp"
+        android:layout_height="57dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/createProposal"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>

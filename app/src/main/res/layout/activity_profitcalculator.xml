@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/pink_back"
+    android:background="@color/white"
     tools:context=".profitcalculator">
 
     <TextView
         android:id="@+id/textView45"
         android:layout_width="391dp"
         android:layout_height="36dp"
-        android:background="@drawable/createformhead"
-        android:text="@string/calc2"
+        android:text="@string/cal4"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +25,6 @@
         android:id="@+id/textView46"
         android:layout_width="394dp"
         android:layout_height="32dp"
-        android:background="@drawable/createformhead"
         android:text="@string/calc4"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -41,7 +39,6 @@
         android:id="@+id/textView44"
         android:layout_width="390dp"
         android:layout_height="36dp"
-        android:background="@drawable/createformhead"
         android:text="@string/calc2"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -56,8 +53,8 @@
         android:id="@+id/btn_calc2"
         android:layout_width="75dp"
         android:layout_height="58dp"
-        android:background="@drawable/ic_action_name"
-        app:backgroundTint="@color/design_default_color_error"
+        android:text="CAL"
+        app:backgroundTint="@color/dogeblu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.952"
@@ -69,7 +66,6 @@
         android:id="@+id/text_tipTotal"
         android:layout_width="298dp"
         android:layout_height="52dp"
-        android:background="@drawable/createformhead"
         android:focusable="true"
         android:fontFamily="sans-serif-black"
         android:text="  Total"
@@ -87,7 +83,6 @@
         android:id="@+id/edit_billAmount"
         android:layout_width="286dp"
         android:layout_height="49dp"
-        android:background="@drawable/createformhead"
         android:ems="10"
 
         android:hint="   Enter your total cost for cake"
@@ -103,7 +98,6 @@
         android:id="@+id/profit_seekbar"
         android:layout_width="233dp"
         android:layout_height="48dp"
-        android:background="@drawable/createformhead"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
@@ -115,7 +109,6 @@
         android:id="@+id/text_tip"
         android:layout_width="296dp"
         android:layout_height="48dp"
-        android:background="@drawable/createformhead"
         android:focusable="true"
         android:fontFamily="sans-serif-black"
         android:text="   Profit"
@@ -131,8 +124,8 @@
         android:id="@+id/btn_calc"
         android:layout_width="72dp"
         android:layout_height="53dp"
-        android:background="@drawable/ic_action_name"
-        app:backgroundTint="@color/design_default_color_error"
+        android:text="Cal"
+        app:backgroundTint="@color/dogeblu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.941"
@@ -144,7 +137,6 @@
         android:id="@+id/Text_seek"
         android:layout_width="107dp"
         android:layout_height="46dp"
-        android:background="@drawable/formrectngle"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -166,11 +158,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView39"
-        android:layout_width="76dp"
-        android:layout_height="55dp"
+    <Button
+        android:id="@+id/btn39"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
         android:background="@drawable/cake"
+        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView28"
         app:layout_constraintHorizontal_bias="0.067"
@@ -205,7 +198,6 @@
         android:id="@+id/textView43"
         android:layout_width="383dp"
         android:layout_height="35dp"
-        android:background="@drawable/createformhead"
         android:text="@string/calc1"
         android:textAlignment="textStart"
         android:textColor="@color/black"
@@ -230,6 +222,6 @@
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.04" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

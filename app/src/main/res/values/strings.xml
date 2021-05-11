@@ -111,6 +111,18 @@
     <string name="txtMail">Email</string>
     <string name="btnSignUp">Sign Up</string>
     <string name="txtReset">Reset Account</string>
+    <string name="invalid_user">Please enter valid user name</string>
+    <string name="invalid_contacts">please Enter valid mobile number</string>
+    <string name="invalid_order">Enter valid Order id</string>
+    <string name="invalid_proposition">Enter valid proposition</string>
+    <string name="invalid_cakecost">Enter valid cake cost</string>
+    <string name="invalid_delivercost">Enter vaild deliver cost</string>
+    <string name="invalid_passward">Enter Valid Passward</string>
+    <string name="invalid_emil">Enter valid email</string>
+    <string name="SignUp" />
+    <string name="viewAll">"See What They Proposed You "</string>
+    <string name="viewall2">See What They Proposed You</string>
+    <string name="cal4">Your net profit</string>
 
 
     <!--profile-->

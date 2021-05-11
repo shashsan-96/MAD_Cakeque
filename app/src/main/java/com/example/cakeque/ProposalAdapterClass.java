@@ -20,6 +20,7 @@ public class ProposalAdapterClass extends RecyclerView.Adapter<ProposalAdapterCl
     Context context;
     DatabaseHelper databaseHelperClass;
 
+
     public ProposalAdapterClass(List<CakeModel> proposal, Context context) {
         this.proposal = proposal;
         this.context = context;
@@ -32,6 +33,9 @@ public class ProposalAdapterClass extends RecyclerView.Adapter<ProposalAdapterCl
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.proposal_item_list,parent,false);
         ViewHolder viewHolder = new ViewHolder(view);
+
+
+
         return viewHolder;
     }
 
