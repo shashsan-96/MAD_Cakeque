@@ -69,10 +69,10 @@ public class CreateOrder extends AppCompatActivity{
                     /*    }else{*/
 
                     //Create DatabaseHelperClass object and call addOrder method to pass data
-                    DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(CreateOrder.this);
-                    int orderid = databaseHelperClass.getAutoIncrementID();
+                    DatabaseHelper databaseHelper = new DatabaseHelper(CreateOrder.this);
+                    int orderid = databaseHelper.getAutoIncrementID();
                     OrderModelClass orderModelClass = new OrderModelClass(orderid, stringName, stringAddress, stringRequirements, stringBudget, stringDDate);
-                    databaseHelperClass.addOrder(orderModelClass);
+                    databaseHelper.addOrder(orderModelClass);
                     Toast.makeText(CreateOrder.this, "Order Added Successfully!", Toast.LENGTH_SHORT).show();
                     finish();
                     startActivity(getIntent());

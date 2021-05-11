@@ -1,11 +1,9 @@
 package com.example.cakeque;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -17,12 +15,12 @@ public class OrderAdapterClass extends RecyclerView.Adapter<OrderAdapterClass.Vi
 
     List<OrderModelClass> order;
     Context context;
-    DatabaseHelperClass databaseHelperClass;
+    DatabaseHelper databaseHelper;
 
     public OrderAdapterClass(List<OrderModelClass> order, Context context) {
         this.order = order;
         this.context = context;
-        databaseHelperClass = new DatabaseHelperClass(context);
+        databaseHelper = new DatabaseHelper(context);
 
     }
 

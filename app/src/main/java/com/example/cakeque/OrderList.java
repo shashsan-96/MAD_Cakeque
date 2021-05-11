@@ -27,8 +27,8 @@ public class OrderList extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         //Create DatabaseHelperClass object and call gerOrder method and set on RecyclerViewAdapter class
-        DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(this);
-        List<OrderModelClass> orderModelClasses = databaseHelperClass.getOrderList();
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        List<OrderModelClass> orderModelClasses = databaseHelper.getOrderList();
 
         if(orderModelClasses.size() > 0){
             OrderAdapterClass orderAdapterClass = new OrderAdapterClass(orderModelClasses, OrderList.this);

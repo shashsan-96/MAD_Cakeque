@@ -26,8 +26,8 @@ public class ModifyOrder extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(this);
-        List<OrderModelClass> orderModelClasses = databaseHelperClass.getOrderList();
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        List<OrderModelClass> orderModelClasses = databaseHelper.getOrderList();
 
         if(orderModelClasses.size() > 0){
             OrderModifyAdapterClass orderModifyAdapterClass = new OrderModifyAdapterClass(orderModelClasses, ModifyOrder.this);

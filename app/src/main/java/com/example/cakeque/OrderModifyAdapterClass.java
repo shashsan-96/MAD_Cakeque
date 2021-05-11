@@ -18,12 +18,12 @@ public class OrderModifyAdapterClass extends RecyclerView.Adapter<OrderModifyAda
 
     List<OrderModelClass> orders;
     Context context;
-    DatabaseHelperClass databaseHelperClass;
+    DatabaseHelper databaseHelper;
 
     public OrderModifyAdapterClass(List<OrderModelClass> orders, Context context) {
         this.orders = orders;
         this.context = context;
-        databaseHelperClass = new DatabaseHelperClass(context);
+        databaseHelper = new DatabaseHelper(context);
     }
 
     @NonNull
@@ -57,7 +57,7 @@ public class OrderModifyAdapterClass extends RecyclerView.Adapter<OrderModifyAda
                 String stringBudget = holder.editTextBudget.getText().toString();
                 String stringdDate = holder.editTextdDate.getText().toString();
 
-                databaseHelperClass.updateOrder(new OrderModelClass(orderModelClass.getOrderId(),
+                databaseHelper.updateOrder(new OrderModelClass(orderModelClass.getOrderId(),
                         stringName,stringAddress,stringRequirements,stringBudget,stringdDate));
                 notifyDataSetChanged();
                 ((Activity) context).finish();
@@ -70,7 +70,7 @@ public class OrderModifyAdapterClass extends RecyclerView.Adapter<OrderModifyAda
             public void onClick(View v) {
 
                 //Call deleteOrder method
-                databaseHelperClass.deleteOrder(orderModelClass.getOrderId());
+                databaseHelper.deleteOrder(orderModelClass.getOrderId());
                 orders.remove(position);
                 notifyDataSetChanged();
             }

@@ -5,12 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.provider.ContactsContract;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseHelperClass extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
 
     //Database version
     private static final int DATABASE_VERSION = 1;
@@ -34,7 +33,7 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME +"("+ORDER_ID + " INTEGER PRIMARY KEY,"+NAME+" TEXT NOT NULL,"+ADDRESS+" TEXT NOT NULL,"+REQUIREMENTS+" TEXT NOT NULL,"+BUDGET+" TEXT NOT NULL,"+DELIVERY_DATE+" TEXT NOT NULL);";
 
     //Create DatabaseHelperClass constructor
-    public DatabaseHelperClass (Context context){
+    public DatabaseHelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -67,14 +66,14 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
 
         //Insert order data into the database by passing ContentValues
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DatabaseHelperClass.ORDER_ID, orderModelClass.getOrderId());
-        contentValues.put(DatabaseHelperClass.NAME, orderModelClass.getName());
-        contentValues.put(DatabaseHelperClass.ADDRESS, orderModelClass.getAddress());
-        contentValues.put(DatabaseHelperClass.REQUIREMENTS, orderModelClass.getRequirements());
-        contentValues.put(DatabaseHelperClass.BUDGET, orderModelClass.getBudget());
-        contentValues.put(DatabaseHelperClass.DELIVERY_DATE, orderModelClass.getdDate());
+        contentValues.put(DatabaseHelper.ORDER_ID, orderModelClass.getOrderId());
+        contentValues.put(DatabaseHelper.NAME, orderModelClass.getName());
+        contentValues.put(DatabaseHelper.ADDRESS, orderModelClass.getAddress());
+        contentValues.put(DatabaseHelper.REQUIREMENTS, orderModelClass.getRequirements());
+        contentValues.put(DatabaseHelper.BUDGET, orderModelClass.getBudget());
+        contentValues.put(DatabaseHelper.DELIVERY_DATE, orderModelClass.getdDate());
         sqLiteDatabase = this.getWritableDatabase();
-        sqLiteDatabase.insert(DatabaseHelperClass.TABLE_NAME, null, contentValues);
+        sqLiteDatabase.insert(DatabaseHelper.TABLE_NAME, null, contentValues);
     }
 
     //Create getOrderList method
@@ -103,11 +102,11 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
     //Create updateOrder method
     public  void updateOrder(OrderModelClass orderModelClass){
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DatabaseHelperClass.NAME,orderModelClass.getName());
-        contentValues.put(DatabaseHelperClass.ADDRESS,orderModelClass.getAddress());
-        contentValues.put(DatabaseHelperClass.REQUIREMENTS,orderModelClass.getRequirements());
-        contentValues.put(DatabaseHelperClass.BUDGET,orderModelClass.getBudget());
-        contentValues.put(DatabaseHelperClass.DELIVERY_DATE,orderModelClass.getdDate());
+        contentValues.put(DatabaseHelper.NAME,orderModelClass.getName());
+        contentValues.put(DatabaseHelper.ADDRESS,orderModelClass.getAddress());
+        contentValues.put(DatabaseHelper.REQUIREMENTS,orderModelClass.getRequirements());
+        contentValues.put(DatabaseHelper.BUDGET,orderModelClass.getBudget());
+        contentValues.put(DatabaseHelper.DELIVERY_DATE,orderModelClass.getdDate());
         sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.update(TABLE_NAME,contentValues,ORDER_ID + " = ?" , new String[]
                 {String.valueOf(orderModelClass.getOrderId())});
