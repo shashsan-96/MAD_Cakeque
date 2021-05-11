@@ -105,5 +105,14 @@
     <string name="btnSignUp">Sign Up</string>
     <string name="txtReset">Reset Account</string>
     <string name="txtLoginUser"> Login</string>
+    <string name="invalid_fname">Please Enter First Name</string>
+    <string name="invalid_lname">Please Enter Last Name</string>
+    <string name="invalid_userid">Please Enter User ID</string>
+    <string name="invalid_qualification">Please Enter Qualifications</string>
+    <string name="invalid_contact">Please Enter Contact No</string>
+    <string name="invalid_location">Please Enter Location</string>
+    <string name="invalidContact">Please Enter Valid Number</string>
+    <string name="invalidLastname">Please Enter Valid Name</string>
+    <string name="invalidFname">Please Enter Valid Name</string>
 
 </resources>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cakeque">
+
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true"/>
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cakeque">
-        <activity android:name=".userPage"></activity>
+        <activity android:name=".ViewAllProfiles"></activity>
+        <activity android:name=".userPage" />
         <activity android:name=".OrderList" />
         <activity android:name=".ModifyOrder" />
         <activity android:name=".CreateOrder" />
