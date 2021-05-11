@@ -18,12 +18,12 @@ public class ProfileAdapterView extends RecyclerView.Adapter<ProfileAdapterView.
 
     List<ProfileModelClass> profile;
     Context context;
-    DatabaseHelperClass databaseHelperClass;
+    DatabaseHelper databaseHelper;
 
     public ProfileAdapterView(List<ProfileModelClass> profile, Context context) {
         this.profile = profile;
         this.context = context;
-        databaseHelperClass = new DatabaseHelperClass(context);
+        databaseHelper = new DatabaseHelper(context);
     }
 
     @NonNull

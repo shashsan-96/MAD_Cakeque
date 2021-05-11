@@ -90,9 +90,9 @@ public class CreateProfile extends AppCompatActivity {
                     if (stringFirstName.length() <= 0 || stringLastName.length() <= 0) {
                         Toast.makeText(CreateProfile.this, "Please Enter All Fields", Toast.LENGTH_SHORT).show();
                     } else {
-                        DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(CreateProfile.this);
+                        DatabaseHelper databaseHelper = new DatabaseHelper(CreateProfile.this);
                         ProfileModelClass profileModelClass = new ProfileModelClass(stringFirstName, stringLastName, stringUserId, stringQualification, stringContact, stringLocation);
-                        databaseHelperClass.addProfile(profileModelClass);
+                        databaseHelper.addProfile(profileModelClass);
                         Toast.makeText(CreateProfile.this, "Create Profile Successfully", Toast.LENGTH_SHORT).show();
                         finish();
                         startActivity(getIntent());

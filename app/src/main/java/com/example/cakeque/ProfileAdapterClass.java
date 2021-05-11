@@ -18,12 +18,12 @@ public class ProfileAdapterClass extends RecyclerView.Adapter<ProfileAdapterClas
 
     List<ProfileModelClass> profile;
     Context context;
-    DatabaseHelperClass databaseHelperClass;
+    DatabaseHelper databaseHelper;
 
     public ProfileAdapterClass(List<ProfileModelClass> profile, Context context) {
         this.profile = profile;
         this.context = context;
-        databaseHelperClass = new DatabaseHelperClass(context);
+        databaseHelper = new DatabaseHelper(context);
     }
 
     @NonNull
@@ -57,7 +57,7 @@ public class ProfileAdapterClass extends RecyclerView.Adapter<ProfileAdapterClas
                 String stringcontact = holder.editText_contact.getText().toString();
                 String stringlocation = holder.editText_location.getText().toString();
 
-                databaseHelperClass.updateProfile(new ProfileModelClass(profileModelClass.getId(),stringfname,stringlname,stringuserid,stringqualifications,stringcontact,stringlocation));
+                databaseHelper.updateProfile(new ProfileModelClass(profileModelClass.getId(),stringfname,stringlname,stringuserid,stringqualifications,stringcontact,stringlocation));
                 notifyDataSetChanged();
                 ((Activity) context).finish();
                 context.startActivity(((Activity) context).getIntent());
@@ -67,7 +67,7 @@ public class ProfileAdapterClass extends RecyclerView.Adapter<ProfileAdapterClas
         holder.button_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                databaseHelperClass.deleteProfile(profileModelClass.getId());
+                databaseHelper.deleteProfile(profileModelClass.getId());
                 profile.remove(position);
                 notifyDataSetChanged();
             }

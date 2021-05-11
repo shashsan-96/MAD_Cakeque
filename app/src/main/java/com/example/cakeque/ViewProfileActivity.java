@@ -21,8 +21,8 @@ public class ViewProfileActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
-        DatabaseHelperClass databaseHelperClass = new DatabaseHelperClass(this);
-        List<ProfileModelClass> profileModelClasses = databaseHelperClass.getProfileList();
+        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        List<ProfileModelClass> profileModelClasses = databaseHelper.getProfileList();
 
         if (profileModelClasses.size() > 0){
             ProfileAdapterClass profileadapterclass = new ProfileAdapterClass(profileModelClasses, ViewProfileActivity.this);

@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseHelperClass extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
 
     //Database version
     private static final int DATABASE_VERSION = 1;
@@ -33,7 +33,7 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
     private static final String CREATE_TABLE = "create table " + TABLE_NAME +"("+ID+
             " INTEGER PRIMARY KEY AUTOINCREMENT," + FNAME + " TEXT NOT NULL,"+LNAME+" TEXT NOT NULL,"+UID+" TEXT NOT NULL,"+QUALIFICATIONS+" TEXT NOT NULL,"+CONTACT+" TEXT NOT NULL,"+LOCATION+" TEXT NOT NULL);";
     //Constructor
-    public DatabaseHelperClass (Context context){
+    public DatabaseHelper(Context context){
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
     }
 
@@ -51,14 +51,14 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
     //Add Profile Data
     public void addProfile(ProfileModelClass profileModelClass){
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DatabaseHelperClass.FNAME, profileModelClass.getFname());
-        contentValues.put(DatabaseHelperClass.LNAME, profileModelClass.getLname());
-        contentValues.put(DatabaseHelperClass.UID, profileModelClass.getUserid());
-        contentValues.put(DatabaseHelperClass.QUALIFICATIONS, profileModelClass.getQualifications());
-        contentValues.put(DatabaseHelperClass.CONTACT, profileModelClass.getContact());
-        contentValues.put(DatabaseHelperClass.LOCATION, profileModelClass.getLocation());
+        contentValues.put(DatabaseHelper.FNAME, profileModelClass.getFname());
+        contentValues.put(DatabaseHelper.LNAME, profileModelClass.getLname());
+        contentValues.put(DatabaseHelper.UID, profileModelClass.getUserid());
+        contentValues.put(DatabaseHelper.QUALIFICATIONS, profileModelClass.getQualifications());
+        contentValues.put(DatabaseHelper.CONTACT, profileModelClass.getContact());
+        contentValues.put(DatabaseHelper.LOCATION, profileModelClass.getLocation());
         sqLiteDatabase = this.getWritableDatabase();
-        sqLiteDatabase.insert(DatabaseHelperClass.TABLE_NAME, null,contentValues);
+        sqLiteDatabase.insert(DatabaseHelper.TABLE_NAME, null,contentValues);
     }
 
     public List<ProfileModelClass> getProfileList(){
@@ -84,12 +84,12 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
 
     public void updateProfile(ProfileModelClass profileModelClass){
         ContentValues contentValues = new ContentValues();
-        contentValues.put(DatabaseHelperClass.FNAME, profileModelClass.getFname());
-        contentValues.put(DatabaseHelperClass.LNAME, profileModelClass.getLname());
-        contentValues.put(DatabaseHelperClass.UID, profileModelClass.getUserid());
-        contentValues.put(DatabaseHelperClass.QUALIFICATIONS, profileModelClass.getQualifications());
-        contentValues.put(DatabaseHelperClass.CONTACT, profileModelClass.getContact());
-        contentValues.put(DatabaseHelperClass.LOCATION, profileModelClass.getLocation());
+        contentValues.put(DatabaseHelper.FNAME, profileModelClass.getFname());
+        contentValues.put(DatabaseHelper.LNAME, profileModelClass.getLname());
+        contentValues.put(DatabaseHelper.UID, profileModelClass.getUserid());
+        contentValues.put(DatabaseHelper.QUALIFICATIONS, profileModelClass.getQualifications());
+        contentValues.put(DatabaseHelper.CONTACT, profileModelClass.getContact());
+        contentValues.put(DatabaseHelper.LOCATION, profileModelClass.getLocation());
         sqLiteDatabase = this.getWritableDatabase();
         sqLiteDatabase.update(TABLE_NAME,contentValues,ID + " = ?" , new String[]
                 {String.valueOf(profileModelClass.getId())});
