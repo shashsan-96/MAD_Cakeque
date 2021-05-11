@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="470dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+
+        android:fontFamily="sans-serif-black"
+        android:scrollbarThumbVertical="@color/black"
+        android:text="Id"
+        android:textColor="@color/dogeblu"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/edittext_User1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="userId"
+        android:textColor="@color/dogeblu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_User"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="-35dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_Name"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="OrderId"
+        android:textColor="@color/dogeblu"
+        android:textColorHighlight="@color/dogeblu"
+        android:textColorHint="@color/dogeblu"
+        android:textColorLink="@color/dogeblu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_Order"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="-35dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Proposition"
+        android:textColor="@color/dogeblu"
+        android:textColorHighlight="@color/dogeblu"
+        android:textColorHint="@color/dogeblu"
+        android:textColorLink="@color/dogeblu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_Proposition"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="-35dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="cake cost"
+        android:textColor="@color/dogeblu"
+        android:textColorHighlight="@color/dogeblu"
+        android:textColorHint="@color/dogeblu"
+        android:textColorLink="@color/dogeblu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_Cakecost"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="-35dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Delivercost"
+        android:textColor="@color/dogeblu"
+        android:textColorHighlight="@color/dogeblu"
+        android:textColorHint="@color/dogeblu"
+        android:textColorLink="@color/dogeblu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_Delivercost"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="-35dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_4"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Contacts"
+        android:textColor="@color/dogeblu"
+        android:textColorHighlight="@color/dogeblu"
+        android:textColorHint="@color/dogeblu"
+        android:textColorLink="@color/dogeblu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_Contacts"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="-35dp"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Update"
+        android:textSize="20dp"
+        app:backgroundTint="@color/dogeblu"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="-65dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Delete"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:backgroundTint="@color/dogeblu"
+        app:cornerRadius="20dp" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="5dp"
+        android:background="@color/dogeblu" />
+
+</LinearLayout>
