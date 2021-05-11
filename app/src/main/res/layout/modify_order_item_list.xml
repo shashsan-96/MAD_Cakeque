@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_OrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/orderId"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/textView_OrderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-27dp"
+        android:layout_marginLeft="100dp"/>
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/enterName"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/dogeblu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enterAddress"
+        android:inputType="textPostalAddress"
+        android:backgroundTint="@color/dogeblu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/editText_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enterBudget"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/dogeblu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/editText_ddate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/deliverDate"
+        android:backgroundTint="@color/dogeblu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="235dp"
+        android:layout_height="31dp"
+        android:ems="10"
+        android:text="@string/enterRequirements"
+        android:textColor="#9898A3"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editText_req"
+        android:layout_width="370dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/formborder"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Update"
+        app:backgroundTint="@color/dogeblu"
+        android:textSize="20dp"
+        app:cornerRadius="10dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="160dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="-65dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/Delete"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/dogeblu"
+        android:textSize="20dp"
+        app:cornerRadius="10dp" />
+
+    <View
+        android:layout_margin="5dp"
+        android:background="@color/dogeblu"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+</LinearLayout>
