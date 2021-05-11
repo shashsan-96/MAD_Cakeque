@@ -57,7 +57,8 @@ public class OrderModifyAdapterClass extends RecyclerView.Adapter<OrderModifyAda
                 String stringBudget = holder.editTextBudget.getText().toString();
                 String stringdDate = holder.editTextdDate.getText().toString();
 
-                databaseHelperClass.updateOrder(new OrderModelClass(orderModelClass.getOrderId(),stringName,stringAddress,stringRequirements,stringBudget,stringdDate));
+                databaseHelperClass.updateOrder(new OrderModelClass(orderModelClass.getOrderId(),
+                        stringName,stringAddress,stringRequirements,stringBudget,stringdDate));
                 notifyDataSetChanged();
                 ((Activity) context).finish();
                 context.startActivity(((Activity) context).getIntent());

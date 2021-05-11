@@ -61,14 +61,14 @@
         android:text="@string/btn1h"
         android:textAlignment="center"
         app:backgroundTint="@color/darkviolet"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/OrderBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:strokeColor="#0C0C0C" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/OrderBtn"
         android:layout_width="410dp"
         android:layout_height="78dp"
         android:shadowColor="#0E0C0C"
@@ -94,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/OrderBtn"
         app:strokeColor="#0C0C0C" />
 
 

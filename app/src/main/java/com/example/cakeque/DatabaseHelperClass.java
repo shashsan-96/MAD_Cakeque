@@ -31,7 +31,7 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
     private SQLiteDatabase sqLiteDatabase;
 
     //Create database table query
-    private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME +"("+ORDER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"+NAME+" TEXT NOT NULL,"+ADDRESS+" TEXT NOT NULL,"+REQUIREMENTS+" TEXT NOT NULL,"+BUDGET+" TEXT NOT NULL,"+DELIVERY_DATE+" TEXT NOT NULL);";
+    private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME +"("+ORDER_ID + " INTEGER PRIMARY KEY,"+NAME+" TEXT NOT NULL,"+ADDRESS+" TEXT NOT NULL,"+REQUIREMENTS+" TEXT NOT NULL,"+BUDGET+" TEXT NOT NULL,"+DELIVERY_DATE+" TEXT NOT NULL);";
 
     //Create DatabaseHelperClass constructor
     public DatabaseHelperClass (Context context){
@@ -49,11 +49,25 @@ public class DatabaseHelperClass extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    public int getAutoIncrementID(){
+        int count=0;
+        String id = "Select count(orderId) from ORDERS";
+        Cursor cur = getReadableDatabase().rawQuery(id,null);
+        if(cur.getCount()>0){
+            cur.moveToFirst();
+            count = cur.getInt(0);
+        }
+       cur.close();
+        int neworderID = count + 100001;
+        return neworderID;
+    }
+
     //Add order data
     public void addOrder(OrderModelClass orderModelClass){
 
         //Insert order data into the database by passing ContentValues
         ContentValues contentValues = new ContentValues();
+        contentValues.put(DatabaseHelperClass.ORDER_ID, orderModelClass.getOrderId());
         contentValues.put(DatabaseHelperClass.NAME, orderModelClass.getName());
         contentValues.put(DatabaseHelperClass.ADDRESS, orderModelClass.getAddress());
         contentValues.put(DatabaseHelperClass.REQUIREMENTS, orderModelClass.getRequirements());

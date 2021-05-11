@@ -35,7 +35,7 @@ public class OrderList extends AppCompatActivity {
             recyclerView.setAdapter(orderAdapterClass);
 
         }else{
-            Toast.makeText(this, "There is no order in the database!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "There is no order in Order List!", Toast.LENGTH_SHORT).show();
         }
 
         cakebtn = (Button) findViewById(R.id.button10);

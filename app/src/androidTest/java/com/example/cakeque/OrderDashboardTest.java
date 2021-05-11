@@ -33,5 +33,4 @@ public class OrderDashboardTest {
         onView(withId(R.id.modifyOrderBtn)).perform(click());
         intended(hasComponent(ModifyOrder.class.getName()));
     }
-
 }

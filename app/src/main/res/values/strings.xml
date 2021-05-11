@@ -45,16 +45,16 @@
     <string name="allOrdersView">View All Orders</string>
     <string name="CreateOrder">Create Order</string>
     <string name="enterOID">Enter order id</string>
-    <string name="orderId">Order Id</string>
+    <string name="orderId">Order ID</string>
     <string name="Name">Name</string>
     <string name="Requirements">Requirements</string>
     <string name="Budget">Budget</string>
     <string name="Date">Date</string>
     <string name="Submit">Submit</string>
-    <string name="enterRequirements">Enter Requirements</string>
-    <string name="enterBudget">Enter Budget</string>
-    <string name="deliverDate">Enter Delivery Date</string>
-    <string name="enterName">Enter Name</string>
+    <string name="enterRequirements">Enter Your Requirements</string>
+    <string name="enterBudget">Enter Your Budget</string>
+    <string name="deliverDate">Enter Delivery Date (DD/MM/YYYY)</string>
+    <string name="enterName">Enter Your Name</string>
     <string name="modifyOrder">Modify Order</string>
     <string name="Update">Update</string>
     <string name="Delete">Delete</string>
@@ -62,9 +62,11 @@
     <string name="Order1">Order 1</string>
     <string name="Order2">Order 2</string>
     <string name="Order3">Order 3</string>
-    <string name="createProposal">Create Proposal</string>
+    <string name="createProposal">CREATE PROPOSAL</string>
     <string name="address">Address</string>
-    <string name="enterAddress">Enter Address</string>
+    <string name="enterAddress">Enter Your Address</string>
+    <!--Validation-->
+    <string name="nameerror">Enter Valid Name</string>
 
     <string name="entUID">ENTER USER ID</string>
     <string name="txtprofile">Profile</string>
@@ -109,5 +111,9 @@
     <string name="txtMail">Email</string>
     <string name="btnSignUp">Sign Up</string>
     <string name="txtReset">Reset Account</string>
-  
+    <string name="dateerror">Enter Valid Date</string>
+    <string name="addresserror">Please Enter Address</string>
+    <string name="reqerror">Please  Enter Requirements</string>
+    <string name="budgeterror">Please Enter Budget</string>
+
 </resources>
