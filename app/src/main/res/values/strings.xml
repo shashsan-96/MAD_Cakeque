@@ -21,7 +21,7 @@
     <string name="prod_note">Win the hearts of customers by making
         proposals or choose the proposal of your dream!</string>
     <!--proposal_create-->
-    <string name="textview7pcreate">Create proposal</string>
+    <string name="textview7pcreate">Hey fill out this fields to Create proposal</string>
     <string name="proposalid">user id</string>
     <string name="orderid">Order id</string>
     <string name="proposition">proposition</string>
@@ -30,7 +30,14 @@
     <string name="deliver_cost">Deliver fee</string>
     <string name="tot_cost">Total_cost</string>
     <string name="calbtn">Calculate</string>
-    <string name="sendbtn">Send</string>
+    <string name="sendbtn">Send your proposal</string>
+
+    <string name="calc1">Enter Total cost for cake</string>
+    <string name="calc2">Set Expected profit margin</string>
+    <string name="calc3">Net profit</string>
+    <string name="calc4">The Amount should be paid by customer</string>
+
+
     <!--proposl modify-->
     <string name="uploadbtn">Update</string>
     <string name="deletebtn">Delete</string>
@@ -104,5 +111,21 @@
     <string name="txtMail">Email</string>
     <string name="btnSignUp">Sign Up</string>
     <string name="txtReset">Reset Account</string>
-  
+    <string name="invalid_user">Please enter valid user name</string>
+    <string name="invalid_contacts">please Enter valid mobile number</string>
+    <string name="invalid_order">Enter valid Order id</string>
+    <string name="invalid_proposition">Enter valid proposition</string>
+    <string name="invalid_cakecost">Enter valid cake cost</string>
+    <string name="invalid_delivercost">Enter vaild deliver cost</string>
+    <string name="invalid_passward">Enter Valid Passward</string>
+    <string name="invalid_emil">Enter valid email</string>
+    <string name="SignUp" />
+    <string name="viewAll">"See What They Proposed You "</string>
+    <string name="viewall2">See What They Proposed You</string>
+    <string name="cal4">Your net profit</string>
+
+
+    <!--profile-->
+
+
 </resources>

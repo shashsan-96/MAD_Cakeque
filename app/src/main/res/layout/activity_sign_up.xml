@@ -4,140 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/back1"
     tools:context=".SignUp">
 
     <TextView
-        android:id="@+id/txtRegister"
-        android:layout_width="136dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/txtUser"
-        android:textColor="@color/black"
-        android:textSize="25dp"
+        android:id="@+id/textView2"
+        android:layout_width="414dp"
+        android:layout_height="264dp"
+        android:background="@drawable/cake2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintVertical_bias="0.141" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="108dp"
-        android:background="@drawable/headershape"
-        android:drawableRight="@drawable/prodetails_foreground"
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="383dp"
+        android:layout_height="55dp"
+        android:background="@drawable/createformhead"
+        android:ems="10"
+        android:hint="  Enter Your Email "
+        android:inputType="textEmailAddress"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <TextView
+        android:id="@+id/txtLogIn"
+        android:layout_width="417dp"
+        android:layout_height="69dp"
+        android:background="@color/dogeblu"
+        android:fontFamily="sans-serif-black"
+        android:text="SignUp"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/txtMail"
-        android:layout_width="129dp"
-        android:layout_height="57dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/txtMail"
-        android:textColor="@color/black"
-        android:textSize="25dp"
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="385dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/createformhead"
+        android:ems="10"
+        android:hint="  Enter User Name ex:AQW12"
+        android:inputType="textPersonName"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.651" />
 
     <EditText
-        android:id="@+id/txtUser4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.204" />
-
-    <TextView
-        android:id="@+id/txtLogIn"
-        android:layout_width="203dp"
-        android:layout_height="90dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/txtRegister"
-        android:textColor="@color/black"
-        android:textSize="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.283"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.039" />
-
-    <EditText
-        android:id="@+id/txtUser1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:layout_width="380dp"
+        android:layout_height="54dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/createformhead"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="  Enter password"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/cardview_dark_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
-
-    <TextView
-        android:id="@+id/txtPass1"
-        android:layout_width="137dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/txtPass"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
-
-    <EditText
-        android:id="@+id/txtUser3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373" />
+        app:layout_constraintVertical_bias="0.76" />
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="131dp"
-        android:layout_height="43dp"
+        android:layout_width="261dp"
+        android:layout_height="51dp"
         android:background="@color/teal_200"
         android:fontFamily="sans-serif-black"
         android:text="@string/btnSignUp"
         android:textSize="20dp"
+
+        app:cornerRadius="20dp"
         app:backgroundTint="@color/teal_200"
-        app:cornerRadius="6dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintVertical_bias="0.877" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
